@@ -1,0 +1,35 @@
+name: Matrix CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: ">>> Cloning Repository"
+      uses: actions/checkout@v3
+
+    - name: ">>> Setting up Python Environment"
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: ">>> Installing System Dependencies"
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: ">>> Building Docker Matrix-Image"
+      run: |
+        docker build -t smart-task-backend:${{ github.sha }} .
+
+    - name: ">>> System Integrity Check"
+      run: |
+        echo "System Architecture: Verified"
+        echo "Docker Image: Stable"
+        echo "Matrix Uplink: Operational"

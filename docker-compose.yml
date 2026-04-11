@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./consulting_tasks.db:/app/consulting_tasks.db
+    environment:
+      - DATABASE_URL=sqlite:///./consulting_tasks.db
+
+  frontend:
+    build:
+      context: ./task-analyst-ui
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
