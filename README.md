@@ -89,4 +89,4 @@ This project is licensed under the **MIT License**.
 
 ## 👤 Author
 
-JuNe aka RainbowDev — System Architect • Full-Stack Development • Electronic MusicTEST CHANGE
+JuNe aka RainbowDev — System Architect • Full-Stack Development • Electronic Music
