@@ -89,5 +89,4 @@ This project is licensed under the **MIT License**.
 
 ## 👤 Author
 
-**RIABO DEV** — System Architect & AI Enabler
-© 2026 Riabo Dev — Nexus Interface v4.0
+JuNe aka RainbowDev — System Architect • Full-Stack Development • Electronic Music
