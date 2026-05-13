@@ -2,7 +2,7 @@
 
 An AI-driven requirements engineering tool designed to transform unstructured project descriptions into actionable command sets. Built as a technical showcase for **AI-Enablement** and **Full-Stack Engineering**.
 
-![CI Status](https://github.com/junesdream/smart-consulting-task-analyst/actions/workflows/main.yml/badge.svg)
+![CI Status](https://github.com/junesdream/smart-task-analyst/actions/workflows/ci-cd.yml/badge.svg)
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![FastAPI](https://img.shields.io/badge/Framework-FastAPI-green)
 ![License](https://img.shields.io/badge/license-MIT-green)
